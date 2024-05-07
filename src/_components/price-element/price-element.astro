@@ -1,0 +1,44 @@
+---
+const { description } = Astro.props
+---
+
+
+<article class="price-element">
+  <strong>Free</strong>
+  <!-- <span class="price-element__price-title">
+    <sup>$</sup>
+    <strong>59</strong>
+    <sub>per/m</sub>
+  </span> -->
+  <span>2 days of free lectures</span>
+  <ul>
+    <li>
+      <svg class="icon">
+        <use xlink:href="/sprites/sprite-main.svg#iconXmark"></use>
+      </svg> Video conference
+    </li>
+    <li>
+      <svg class="icon">
+        <use xlink:href="/sprites/sprite-main.svg#iconXmark"></use>
+      </svg>
+      Lecture package
+    </li>
+    <li>
+      <svg class="icon">
+        <use xlink:href="/sprites/sprite-main.svg#iconCheck"></use>
+      </svg>General information
+    </li>
+    <li>
+      <svg class="icon">
+        <use xlink:href="/sprites/sprite-main.svg#iconCheck"></use>
+      </svg>Introduction to specialty
+    </li>
+    <li>
+      <svg class="icon">
+        <use xlink:href="/sprites/sprite-main.svg#iconXmark"></use>
+      </svg>Main teachers
+    </li>
+  </ul>
+
+  <button type="button" name="joinPrice" class="button">Join</button>
+</article>

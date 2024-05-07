@@ -1,0 +1,46 @@
+/* @import './blocks/pricing-table/pricing-table.css'; */
+@import './blocks/price-list/price-list.css';
+
+#pricing {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--c-dark);
+  padding: 64px;
+  border-radius: 0 0 50px 50px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 50px;
+    left: 0;
+    bottom: 100%;
+    z-index: -1;
+    background: var(--c-dark);
+  }
+
+  & > h2,
+  & > h3 {
+    color: var(--c-text-light);
+    text-transform: uppercase;
+  }
+
+  & > h2 {
+    order: 1;
+    font-size: clamp(2rem, 7vw, 3rem);
+    font-weight: normal;
+    max-width: 700px;
+    margin-top: 20px;
+    line-height: 1;
+  }
+
+  & > h3 {
+    order: 0;
+  }
+
+  @media screen and (width <= 768px) {
+    padding: 14px;
+    border-radius: 0 0 30px 30px;
+  }
+}

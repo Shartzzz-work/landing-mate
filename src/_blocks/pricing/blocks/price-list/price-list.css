@@ -1,0 +1,11 @@
+@import '../../../../_components/price-element/price-element.css';
+
+.price-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  order: 3;
+  margin-top: 40px;
+}

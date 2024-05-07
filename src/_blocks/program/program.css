@@ -1,0 +1,87 @@
+#program {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  background: var(--c-light);
+  padding: 64px;
+  border-radius: 50px;
+}
+
+.program__shape-container {
+  flex: 1;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.shape-1 {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  max-height: 520px;
+  width: 100%;
+}
+
+.program-container {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  & h2, h3 {
+    text-transform: uppercase;
+  }
+
+  & h2 {
+    order: 1;
+    font-size: clamp(1.5rem, 7vw, 3rem);
+    font-weight: normal;
+    line-height: 1;
+    margin-top: 20px;
+  }
+
+  & h3 {
+    order: 0;
+  }
+}
+
+.accordion {
+  order: 2;
+  margin-top: 40px;
+}
+
+.accordion-item {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--c-dark);
+}
+
+.accordion-title {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  cursor: pointer;
+
+  &::after {
+    content: '⇲';
+    font-size: 1.3em;
+  }
+}
+
+.accordion-body {
+  margin-top: 20px;
+}
+
+@media screen and (width <= 1050px) {
+  #program {
+    flex-direction: column;
+    padding: 14px;
+    border-radius: 30px;
+  }
+
+  .program__shape-container {
+    min-height: 400px;
+  }
+}

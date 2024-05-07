@@ -1,0 +1,8 @@
+@import './_css/general.css';
+@import './_blocks/hero/hero.css';
+@import './_blocks/fundamentals/fundamentals.css';
+@import './_blocks/program/program.css';
+@import './_blocks/get-started/get-started.css';
+@import './_blocks/pricing/pricing.css';
+@import './_blocks/tools/tools.css';
+@import './_blocks/register/register.css';

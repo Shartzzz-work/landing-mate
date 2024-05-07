@@ -1,0 +1,57 @@
+#greatness {
+  display: flex;
+  background: var(--c-accent);
+  border-radius: 30px;
+  padding: 40px;
+}
+
+.greatness-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  & h2 {
+    font-size: clamp(2rem, 10vw, 3rem);
+  }
+}
+
+.greatness__numbers-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.greatness__numbers-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 140px;
+
+  & strong {
+    font-size: 3rem;
+  }
+}
+
+.greatness__shape-container {
+  flex: 1;
+  background-image: radial-gradient(
+    circle at center,
+    var(--c-dark) 0.15rem,
+    transparent 0
+  );
+  background-size: 5rem 5rem;
+  background-repeat: round;
+}
+
+@media screen and (width <= 768px) {
+  #greatness {
+    padding: 12px;
+  }
+  .greatness__shape-container {
+    display: none;
+  }
+  .greatness__numbers-item {
+    align-items: center;
+  }
+}
